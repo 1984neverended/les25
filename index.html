@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Les 25</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="charset" content="utf-8">
+        <link rel="stylesheet" href="style/main.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#darkbutton").click(function () {
+                    $(".box").removeClass("boxLight");
+                    $(".box").addClass("boxDark");
+                    $("body").removeClass("bodyLight");
+                    $("body").addClass("bodyDark");
+                });
+                $("#lightbutton").click(function () {
+                    $(".box").removeClass("boxDark");
+                    $(".box").addClass("boxLight");
+                    $("body").removeClass("bodyDark");
+                    $("body").addClass("bodyLight");
+                })
+            });
+        </script>    
+        </head>
+    <body class="bodyLight">
+        <div class="box boxLight">
+            <h1>Testing jQuery</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vulputate lectus erat, in eleifend elit rutrum vel.
+            Pellentesque vel massa ac nisl ultrices viverra. Curabitur eget risus nec risus fermentum pretium. Integer orci erat,
+            sodales in lacus non, tempor efficitur metus. Vivamus gravida libero eget felis faucibus suscipit. Phasellus vitae ipsum
+            lorem. Duis eget magna est.</p>
+
+            <p>Fusce luctus, felis a rhoncus finibus, eros lorem gravida magna, vel aliquet libero velit nec dolor. Cras sed egestas
+            lacus, a iaculis augue. Etiam elementum purus ac nibh pulvinar, eu efficitur tortor ultrices. Pellentesque semper lorem
+            urna, nec luctus diam elementum at. In rutrum ante sit amet ligula maximus, et aliquet nisl iaculis. Donec quis
+            consectetur tellus. Praesent eu ipsum dapibus, dictum turpis sed, dapibus velit. Nunc accumsan eros at ornare imperdiet.
+            Sed feugiat lorem vel metus lobortis vulputate. Praesent vitae odio tincidunt, faucibus justo ut, volutpat dui.</p>
+
+            <p>Ut at auctor lectus, eu tincidunt diam. Mauris volutpat nisl sed orci convallis porta. Sed et est nisl. Aenean facilisis
+            turpis quis est cursus, et fringilla purus gravida. Mauris molestie, ex ac blandit suscipit, elit lacus luctus erat, sit
+            amet posuere nulla turpis quis turpis. Aenean quis justo felis. Nullam interdum tristique iaculis. Donec ut ligula quis
+            dui semper ullamcorper at ut augue. Mauris vestibulum pretium cursus.</p>
+
+            <p>Ut diam enim, faucibus vitae feugiat et, vestibulum quis ligula. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Phasellus placerat, elit eget dictum sollicitudin, nisl mauris pharetra libero, ut consequat massa leo vulputate
+            justo. Suspendisse a gravida lectus. In sit amet egestas est. In dignissim, diam nec sollicitudin ullamcorper, ante enim
+            dapibus augue, sed vehicula massa metus non nisl. Cras in erat aliquam, ullamcorper turpis nec, venenatis nunc.
+            Suspendisse vel eros eu eros vulputate mattis quis eget ante. Vestibulum dapibus nulla porttitor, facilisis nisi eget,
+            ornare nisl. Sed aliquam ornare nisi, at fermentum ex interdum id.</p>
+
+            <p>In placerat semper aliquet. Nunc ornare quis nulla nec tincidunt. Aliquam sed iaculis metus. Suspendisse sed nisl at
+            turpis placerat porttitor. Curabitur quam velit, rutrum quis mauris vitae, lobortis consectetur nibh. Nam eget pharetra
+            ex, at laoreet lorem. Integer feugiat euismod elit, id gravida sapien vehicula et. Suspendisse quis erat eros. Integer
+            porta posuere purus. Phasellus ut condimentum ante.</p>
+            <button id="darkbutton"></button>
+            <button id="lightbutton"></button>
+        </div>
+    </body>
+</html>
